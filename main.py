@@ -18,10 +18,10 @@ if __name__ == '__main__':
     mydfa = mynfa.to_dfa()
     mydfa.minimize()
 
-    print(mydfa.VN) # DFA的非终结符集
-    print(mydfa.VT) # DFA的终结符集
+    print('DFA非终结符集：', mydfa.VN) # DFA的非终结符集
+    print('DFA终结符集：', mydfa.VT) # DFA的终结符集
     # for k, v in mydfa.f.items():
     #     print(k, v)
-    print(mydfa.f)  # 描述DFA图非终结符转换关系的数据结构
-    print(mydfa.S)  # DFA的初始状态
-    print(mydfa.T)  # DFA的终止状态集
+    print('DFA非终结符间的转换关系', mydfa.f)  # 描述DFA图非终结符转换关系的数据结构
+    print('DFA初始状态', mydfa.S)  # DFA的初始状态
+    print('DFA终止状态集', mydfa.T)  # DFA的终止状态集
