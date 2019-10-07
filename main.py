@@ -9,8 +9,8 @@
 from regex import regex2post, post2nfa
 
 if __name__ == '__main__':
-    regex = '(a|b)*.a.b.b'
-    # regex = input("请输入正规式（“|”为“或”，“.”为“连接”，“*”为“闭包”）：")
+    # regex = '(a|b)*.a.b.b'
+    regex = input("请输入正规式（“|”为“或”，“.”为“连接”，“*”为“闭包”）：")
     # eps = input("请输入“空”的标识符：")
     eps = 'eps'
     post = regex2post(regex)
